@@ -1,13 +1,11 @@
 #!/bin/bash
-
 #Prompt the user to enter a directory name
 read -p "Enter a directory name: " dir_name
-
-#Defining submission.txt and submission.txt
+#Defining submission1.txt and submission2.txt
 file1=submission1.txt
 file2=submission2.txt
 
-#Using the i condition
+#Using the if condition
 if [ -f "$dir_name" ]; then
 	echo "Error $dir_name already exists as a file!"
 elif [ -d "$dir_name" ]; then
@@ -23,6 +21,6 @@ elif [ ! -d "$dir_name" ]; then
 	mkdir $dir_name
 	touch "$dir_name/file1"
 	touch "$dir_name/file2"
-else
-	echo "Welldone"
+ese
+	echo "Scriptfinished"
 fi
